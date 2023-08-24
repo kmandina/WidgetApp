@@ -1,3 +1,3 @@
 # widgets_app
 
-A new Flutter project.
+A flutter simple project with basic componet and views
