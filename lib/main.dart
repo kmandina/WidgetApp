@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:widgets_app/config/router/app_router.dart';
 import 'package:widgets_app/config/theme/app_theme.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.blueAccent,
+    ),
+  );
   runApp(const MainApp());
 }
 
